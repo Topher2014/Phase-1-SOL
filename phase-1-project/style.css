@@ -62,7 +62,16 @@ html {
   }
   
   .list-li h3 {
-    height: 70px;
+    font-size: x-large
+  }
+
+  .list-li h4 {
+    height: 40px;
+    margin: 0px;
+  }
+
+  .list-li p {
+    margin: 0px; 
   }
   
   .list-li img {
@@ -85,13 +94,15 @@ html {
     border-top: solid;
     border-bottom: solid;
     border-width: thin;
+    border-style: dotted;
+    border-color: #fee574;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
   }
   
   label {
-    font-family: Verdana;
+    font-family: math;
   }
   
   input {
@@ -103,6 +114,7 @@ html {
   input[type=submit] {
     border: none;
     background-color: #cc745e;
+    color: white;
     color: black(255, 255, 255);
     padding: 3px;
     font-size: large;
@@ -112,6 +124,7 @@ html {
   
   button, [type="submit"] {
     cursor: pointer;
+    font-family: math;
   }
   
   form {
@@ -122,4 +135,6 @@ html {
     transition: max-height 400ms ease-in-out;
     display: flex;
     flex-direction: column;
+    color: #fee574;
   }
+
