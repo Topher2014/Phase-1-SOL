@@ -7,7 +7,7 @@ html {
   body {
     min-height: 100%;
     min-width: 100%;
-    background-color: #e0902d;
+    background-color: #834748;
   }
   
   button {
@@ -15,7 +15,7 @@ html {
   }
   
   #main-content {
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     display: flex;
     justify-content: center;
@@ -26,8 +26,9 @@ html {
     padding: 15px 20px 18px 18px;
     border-radius: 5px;
     box-shadow: 2px 5px 5px #333;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tfMtyAJEj9-gjVs_dyFYte0xoA3Jplmo_Q&usqp=CAU");
-    object-fit: fill;
+    background-image: url("https://images.prismic.io/ai-website/d4552372-3205-49f3-b3f7-c61c435e860a_ascend-innovations--who-we-are--sunrise.jpg?auto=compress%2Cformat&q=90&w=1920");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
   
   #list {
@@ -51,12 +52,13 @@ html {
   .list-li {
     list-style: none;
     width: 300px;
-    box-shadow: 2px 2px 5px #c9c8c8;
+    /* box-shadow: 2px 2px 5px #c9c8c83e; */
     padding: 5px;
     margin: 10px;
-    background-color: #9992a6;
+    background-color: #cc745e;
     background: rgba9992a6(0,0,0,0.5);
     text-align: center;
+    color: white;
   }
   
   .list-li h3 {
@@ -72,7 +74,7 @@ html {
     width: 190px;
     margin: 15px 5px 15px 5px;
     border: none;
-    background-color: #e0902d;
+    background-color: #fee574;
     color: rgb(255, 255, 255);
     padding: 3px;
     font-size: large;
@@ -100,8 +102,8 @@ html {
   
   input[type=submit] {
     border: none;
-    background-color: #fcba03;
-    color: rgb(255, 255, 255);
+    background-color: #cc745e;
+    color: black(255, 255, 255);
     padding: 3px;
     font-size: large;
     font-weight: bold;
