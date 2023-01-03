@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #e0902d;
+  }
+  
+  button {
+    font-size: 10px;
+  }
+  
+  #main-content {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tfMtyAJEj9-gjVs_dyFYte0xoA3Jplmo_Q&usqp=CAU");
+    object-fit: fill;
+}
+  
+  #list {
+    margin: 10px;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+  }
+
+  .list ul {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list-li {
+    list-style: none;
+    width: 300px;
+    box-shadow: 2px 2px 5px #c9c8c8;
+    padding: 5px;
+    margin: 10px;
+    background-color: #9992a6;
+    background: rgba9992a6(0,0,0,0.5);
+    text-align: center;
+  }
+  
+  .list-li h3 {
+    height: 70px;
+  }
+  
+  .list-li img {
+    width: 300px;
+    height: 265px;
+  }
+  
+  .list-li button {
+    width: 190px;
+    margin: 15px 5px 15px 5px;
+    border: none;
+    background-color: #e0902d;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #form-wrapper {
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  label {
+    font-family: Verdana;
+  }
+  
+  input {
+    height: 30px;
+    width: 100%;
+    margin: 3px;
+  }
+  
+  input[type=submit] {
+    border: none;
+    background-color: #fcba03;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    font-weight: bold;
+
+  }
+  
+  button, [type="submit"] {
+    cursor: pointer;
+  }
+  
+  form {
+    margin: 10px auto;
+    width: 400px; 
+    /* these 2 lines of styles help animate transition of form from collapsed to visible */
+    max-height: 371px;
+    transition: max-height 400ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
