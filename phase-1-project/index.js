@@ -1,3 +1,4 @@
+//I added a comment
 // GLOBAL
 const sunriseList = document.querySelector('#sunrise-list')
 // Defining text characters for the empty and full hearts for you to use later.
