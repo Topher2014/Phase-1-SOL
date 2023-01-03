@@ -1,16 +1,15 @@
-//I added a comment
-//I added another comment
 // GLOBAL
+const baseUrl = "https://api.sunrisesunset.io/json?"
 const sunriseList = document.querySelector('#sunrise-list')
 // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // FETCH FUNCTIONS
-function getAllSunrises() {
-    fetch('https://sunrisesunset.io/api/')
-    .then(response => response.json())
-    .then(console.log)
+function getAllSunrises(lat, lng) {
+    return fetch(baseUrl + `lat=${lat}&lng=${lng}`)
+        .then(response => response.json())
+        .then(console.log)
 }
 
 // RENDER FUNCTIONS
