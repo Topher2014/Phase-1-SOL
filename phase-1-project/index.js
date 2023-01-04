@@ -2,7 +2,7 @@
 const baseUrl = "https://api.sunrisesunset.io/json?"
 const endUrl = "&date=today"
 const sunriseList = document.querySelector('#sunrise-list')
-const URL = 'http://localhost:3000/parks'
+const parksUrl = 'http://localhost:3000/parks'
 
 
 // FETCH FUNCTIONS
@@ -10,6 +10,12 @@ function getAllSunrises(lat, lng, tmz) {
     return fetch(baseUrl + `lat=${lat}&lng=${lng}&timezone=${tmz}` + endUrl)
         .then(response => response.json())
         // .then(renderNationalParks)
+}
+
+function getLocationData(url) {
+    return fetch('url')
+    .then(response => response.json())
+
 }
 
 function getNationalParks(url) {
@@ -42,11 +48,11 @@ function renderNationalParks(parksObj) {
     li.append(image, nationalPark, location, sunrise, sunset, goldenHour, dayLength, like)
 }
 
-function iterateParks(array) {
-    array.forEach(renderNationalParks)
+function iterateParks(parksArray) {
+    parksArray.forEach(renderNationalParks)
 }
 
 // INITIALIZERS
-getNationalParks(URL).then(parksArray => {iterateParks(parksArray)})
+getNationalParks(parksUrl).then(parksArray => {iterateParks(parksArray)})
 // getAllSunrises(37.865101, -119.538330, "PST").then(console.log)
 
