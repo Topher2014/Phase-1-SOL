@@ -56,3 +56,28 @@ function iterateParks(parksArray) {
 getNationalParks(parksUrl).then(parksArray => {iterateParks(parksArray)})
 // getAllSunrises(37.865101, -119.538330, "PST").then(console.log)
 
+//DOM selecotrs
+let formSubmition = document.querySelector('#book-form');
+let formTitle = document.querySelector('#form-title');
+let formLocation = document.querySelector('#form-location');
+let formImage = document.querySelector('#form-imageUrl');
+let formBtn = document.querySelector('#submit-form');
+
+formSubmition.addEventListener('submit', (e)=> {
+    e.preventDefault()
+    let newForm = {
+        title : formTitle.value,
+        location : formLocation.value,
+        image : formImage.value,
+    }
+    fetch('http://localhost:3000/parks', {
+        method : "POST",
+        headers : {
+            "Content-Type" : "application/json",
+            "Accept" : "application/json",
+        },
+        body : JSON.stringify(newForm)
+    })
+    .then(re => re.json())
+    .then(renderNationalParks)
+})
