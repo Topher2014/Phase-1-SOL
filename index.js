@@ -58,6 +58,7 @@ function renderNationalParks(parksObj) {
     location.textContent = parksObj.location
     const sunrise = document.createElement('p')
     sunrise.textContent = parksObj.sunrise
+//  sunrise.textContent = `Sunrise: ${parksObj.sunrise}`    
     sunrise.setAttribute('id', 'para-1')
     const sunriseTime = document.getElementById('#para-1')
     const sunset = document.createElement('p')
